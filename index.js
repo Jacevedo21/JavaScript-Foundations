@@ -3,7 +3,10 @@
 // 🏡 Task 1: Variables
 /* Create variables for principal, interest rate, and years. Assign them the values 200000, 0.05, and 30 respectively. Create another value called name and give it the value of your own name.
 */
-
+const principal = 200000
+const interestRate = 0.05
+const years = 30
+const name = "Jorge"
 
 
 
@@ -14,7 +17,8 @@
 (1) Create a variable called `monthlyInterestRate` and give it the value of interest rate divided by 12. 
 (2) Create another variable called `periods` and give it the value of years*12.
 */
-
+let monthlyInterestRate = interestRate / 12;
+let periods = years * 12;
 
 
 
@@ -35,8 +39,12 @@ Hint #2: you'll need to use the `math` object for parts of this calculation!
 
 When your math is correct, monthlyRate will equal 1073.64
 */
-
-
+// creating different variables numerator, denominatior - using the formula in readme to find monthlyRate.
+let n1 = (1 + I)^N;
+let n2 = n1 * I;
+let numerator = n1 * n2;
+let denominatior = n1 - 1;
+let monthlyRate = numerator / denominatior;
 
 
 // 🏡 Task 3: Function
@@ -55,7 +63,11 @@ If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly 
 For example,
 mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 */
+// creating a function calle dmortgage calculator - passing in the parameters of PIN
 
+function mortgageCalculator(P, I, N){
+
+}
 
 
 
